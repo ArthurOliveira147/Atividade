@@ -1,12 +1,25 @@
 Nome:Arthur de Oliveira Baschera
 Data:30/07/2024
 
-Atividade:Seq Log E.D
+Atividade:Seq Log ir para a escola
 
 1 - Eu acordo as 6:30
-2 - Levanto da minha cama
-3 - Tomo café da manha
-4 - Visto o uniforme da miha escola
-5 - Pego a minha mochila
-6 - Coloco um tenis
-7 - E ando até a minha escola
+2 - Desligo o meu despertador
+3 - Levanto da minha cama
+4 - Vou para a cozinha
+5 - Arumo o meu café da manha
+6 - Tomo o meu café da manha
+7 - Vou para o banheiro
+8 - Pego minha escova de dentes e a pasta de dentes
+9 - Escovo meus dentes
+10 - Volto para o meu quarto
+11 - Abro a porta do guarda-roupa
+12 - Visto o uniforme da escola e meias
+13 - Fecho a porta do guarda-roupa
+14 - Pego a minha mochila
+15 - Guardo meus celular dentro da mochila
+16 - Abro a porta de casa
+17 - Saio de casa
+18 - Coloco um tenis
+19 - Fecho a porta
+20 - E ando até a minha escola
