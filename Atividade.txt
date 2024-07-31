@@ -1,0 +1,12 @@
+Nome:Arthur de Oliveira Baschera
+Data:30/07/2024
+
+Atividade:Seq Log E.D
+
+1 - Eu acordo as 6:30
+2 - Levanto da minha cama
+3 - Tomo café da manha
+4 - Visto o uniforme da miha escola
+5 - Pego a minha mochila
+6 - Coloco um tenis
+7 - E ando até a minha escola
