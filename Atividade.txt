@@ -6,8 +6,8 @@ Atividade:Seq Log ir para a escola
 1 : Eu acordo as 6:30
 2 : Desligo o meu despertador
 3 : Levanto da minha cama
-4 : Abro a porta do meu quarto
-5 : Pego meu celular e mecho um pouco nele
+4 : Pego meu celular e mecho um pouco nele
+5 : Abro a porta do meu quarto
 6 : Vou para a cozinha
 7 : Arumo o meu café da manha (normalmente um copo de Nescau)
 8 : Tomo o meu café da manha
