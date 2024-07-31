@@ -32,4 +32,5 @@ Atividade:Seq Log ir para a escola
 27 : Fecho a porta de casa
 28 : Ando até a minha escola
 
-Obs:Eu não coloquei detalhes que eu achei desne
+Obs:Eu não coloquei detalhes que eu achei
+desnecessários
