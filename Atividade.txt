@@ -3,7 +3,7 @@ Data:30/07/2024
 
 Atividade:Seq Log ir para a escola
 
-1 : Eu acordo as 6:30
+1 : Eu acordo das 6:30 até as 6:55
 2 : Desligo o meu despertador
 3 : Levanto da minha cama
 4 : Pego meu celular e mecho um pouco nele
