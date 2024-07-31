@@ -6,22 +6,28 @@ Atividade:Seq Log ir para a escola
 1 - Eu acordo as 6:30
 2 - Desligo o meu despertador
 3 - Levanto da minha cama
-4 - Pego meu celular e mecho um pouco nele
-5 - Vou para a cozinha
-6 - Arumo o meu café da manha (normalmente um copo de Nescau)
-7 - Tomo o meu café da manha
-8 - Vou para o banheiro
-9 - Pego minha escova de dentes e a pasta de dentes
-10 - Escovo meus dentes
-11 - Volto para o meu quarto
-12 - Abro a porta do guarda-roupa
-13 - Visto o uniforme da escola e meias
-14 - Fecho a porta do guarda-roupa
-15 - Pego a minha mochila
-16 - Desligo meu celular ou deixo ele no silencioso
-17 - Guardo meus celular dentro da mochila
-18 - Abro a porta de casa
-19 - Saio de casa
-20 - Coloco um calsado
-21 - Fecho a porta
-22 - E ando até a minha escola
+4 - Abro a porta do meu quarto
+5 - Pego meu celular e mecho um pouco nele
+6 - Vou para a cozinha
+7 - Arumo o meu café da manha (normalmente um copo de Nescau)
+8 - Tomo o meu café da manha
+9 - Vou para o banheiro
+10 - Abro a porta do banheiro
+11 - Pego minha escova e a pasta de dentes
+12 - Escovo meus dentes
+13 - Saio do banheiro
+14 - Fecho a porta do banheiro
+15 - Volto para o meu quarto
+16 - Abro a porta do guarda-roupa
+17 - Pego o uniforme da escola e meias
+18 - Visto o uniforme da escola e meias
+19 - Fecho a porta do guarda-roupa
+20 - Pego a minha mochila
+21 - Desligo meu celular ou deixo ele no silencioso
+22 - Guardo meus celular dentro da mochila
+23 - Vou para a sala de estar
+24 - Abro a porta de casa
+25 - Saio de casa
+26 - Coloco um calsado (normalmente um tenis)
+27 - Fecho a porta de casa
+28 - Ando até a minha escola
