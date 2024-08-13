@@ -59,3 +59,32 @@ int main() {
 }
 
  1008:Salário
+
+    int numF = 0, horasTrab = 0;
+    double valorhora = 0.0, salario = 0.0;
+    
+    scanf("%d\n%d\n%lf",&numF, &horasTrab, &valorhora);
+    salario = valorhora*horasTrab;
+    printf("NUMBER = %d\nSALARY = U$ %.2lf\n",numF,salario);
+
+ 1009:Salário com Bônus
+
+    char a[100];
+    double total = 0.0, salarioFixo = 0.0, totalVendas = 0.0;
+    
+    scanf("%s\n", &nome);
+    scanf("%lf\n%lf\n",&salarioFixo,&totalVendas);
+    
+    total = salarioFixo + (totalVendas*0.15);
+    printf("TOTAL")
+
+ 1010:Cálculo Simples
+
+    int codigo1 = 0, codigo2 = 0;
+    int peca1 = 0, peca2 = 0;
+    double valorPeca1 = 0.00, valorPeca2 = 0.00;
+    double valorTotal = 0.00;
+    
+    scanf("%d\n%d\n%.2lf\n%d\n%d\n.2lf",&codigo1,&codigo2,&peca1,&peca2);
+    valorTotal = (peca1*valorPeca1)+(peca2*valorPeca2);
+    printf("TOTAL = ",valorTotal);
