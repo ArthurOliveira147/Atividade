@@ -85,13 +85,6 @@ int main() {
     double valorPeca1 = 0.00, valorPeca2 = 0.00;
     double valorTotal = 0.00;
     
-    scanf("%d\n%d\n%lf",&codigo1,&peca1,&valorPeca1);
-    scanf("%d\n%d\n%lf",&codigo2,&peca2,&valorPeca2);
-    
+    scanf("%d\n%d\n%.2lf\n%d\n%d\n.2lf",&codigo1,&codigo2,&peca1,&peca2);
     valorTotal = (peca1*valorPeca1)+(peca2*valorPeca2);
-    
-    printf("VALOR A PAGAR: R$ %.2lf\n",valorTotal);
-
- 1011:Esfera
-
-    double pi  = 3.141559;
+    printf("TOTAL = ",valorTotal);
