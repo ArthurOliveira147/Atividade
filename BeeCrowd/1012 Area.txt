@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double A = 0.0, B = 0.0, C = 0.0;
+    double TRIANGULO,CIRCULO,TRAPEZIO,QUADRADO,RETANGULO = 0.000;
+    
+    scanf("%lf\n%lf\n%lf", &A, &B, &C);
+    TRIANGULO = (A*2)+C;
+    CIRCULO = C;
+    TRAPEZIO = (A*2)+(B*2);
+    QUADRADO = B*4;
+    RETANGULO = (A*2)+(B*2);
+    printf("")
+ 
+    return 0;
+}
