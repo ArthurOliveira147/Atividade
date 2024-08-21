@@ -8,39 +8,8 @@ double Potenciasao (double A);
 
 int main(){
 
-    //matematica
+        //menu
 
-    double Soma (double A, double B);
-    {
-        scanf ("%lf\n%lf", &A, &B);
-        Soma = A+B;
-        printf ("Soma = %.5lf\n", Soma);
-
-        return (Soma);
-    }
-    double Subtracao (double A, double B);
-    {
-        scanf ("%lf\n%lf", &A, &B);
-        Subtracao = A-B;
-        printf ("Subtracao = %.5lf\n", Subtracao);
-    }
-    double Multiplicacao (double A, double b);
-    {
-        scanf ("%lf\n%lf", &A, &B);
-        Multiplicaco = A*B;
-        printf ("Multiplicacao = %.5lf\n", Multiplicacao);
-    }
-    double Divisao  (double A, double B);
-    {
-        scanf ("%lf\n%lf", &A, &B);
-        Divisao = A/B;
-        printf ("Divisao = %.5lf\n", Divisao);
-    }
-
-    //menu
-
-    do while ();
-    {
     printf (Escolha a operacao:);
     printf (0. Sair);
     printf (1. Soma);
@@ -53,7 +22,6 @@ int main(){
     printf (8. MDC);
     printf (9. MMC);
     printf (10. Equacao de Segundo Grau);
-    }
 
 it (input == ){
     printf (Digite primeiro numero);
@@ -61,5 +29,17 @@ it (input == ){
     printf (Digite segundo numero);
     scanf ("%lf", &B);
 }
+
+    //calculos
+
+        double Soma (double A, double B);
+    {
+        scanf ("%lf\n%lf", &A, &B);
+        resultado = A+B;
+        printf ("resultado = %.5lf\n", Soma);
+
+        return (resultado);
+    }
+
     return 0;
 }
