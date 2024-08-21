@@ -11,7 +11,7 @@ int main() {
     TRAPEZIO = (A*2)+(B*2);
     QUADRADO = B*4;
     RETANGULO = (A*2)+(B*2);
-    printf("")
+    printf("");
  
     return 0;
 }
