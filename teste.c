@@ -15,6 +15,8 @@ int main(){
         scanf ("%lf\n%lf", &A, &B);
         Soma = A+B;
         printf ("Soma = %.5lf\n", Soma);
+
+        return (Soma);
     }
     double Subtracao (double A, double B);
     {
@@ -38,7 +40,7 @@ int main(){
     //menu
 
     do while ();
-
+    {
     printf (Escolha a operacao:);
     printf (0. Sair);
     printf (1. Soma);
@@ -51,6 +53,7 @@ int main(){
     printf (8. MDC);
     printf (9. MMC);
     printf (10. Equacao de Segundo Grau);
+    }
 
 it (input == ){
     printf (Digite primeiro numero);
