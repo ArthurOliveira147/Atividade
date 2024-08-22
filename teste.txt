@@ -8,7 +8,7 @@ double Divisao (double A, double B);
 int main(){
 
 double A = 0.00000, B = 0.00000;
-int input = 0;
+int entrada = 0;
 
     //menu
 
@@ -25,11 +25,11 @@ int input = 0;
     printf ("9. MMC\n");
     printf ("10. Equacao de Segundo Grau\n");
     printf( "Escolha uma operacao\n");
-    scanf ("%d", &input);
+    scanf ("%d", &entrada);
 
-    switch (input){
+    switch (entrada){
       case 1:
-
+      
     }
 
 
@@ -51,6 +51,26 @@ int input = 0;
             
         return (resultado);
     }
+        double Multiplicacao(double A, double B){
+            double resultado = 0.00000;
+            scanf ("%lf\n%lf", &A, &B);
+            resultado = A*B;
+            printf ("resultado = %.5lf\n", resultado);
+            
+        return (resultado);
+    }
+        double Divisao (double A, double B){
+            double resultado = 0.00000;
+            scanf ("%lf\n%lf", &A, &B);
+            resultado = A/B;
+            printf ("resultado = %.5lf\n", resultado);
+            
+        return (resultado);
+    }
+        
+    return 0;
+}
+
         double Multiplicacao(double A, double B){
             double resultado = 0.00000;
             scanf ("%lf\n%lf", &A, &B);
