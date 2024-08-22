@@ -4,6 +4,12 @@ double Soma (double A, double B);
 double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
+double Potenciasao (double A, );
+double Raiz Quadrada ();
+double Fatorial ();
+int MDC ();
+int MMC ();
+double Equacao de Segundo Grau ();
 
 int main(){
 
@@ -59,6 +65,19 @@ int entrada = 0;
             
         return (resultado);
     }
+        double Divisao (double A, double B){
+            double resultado = 0.00000;
+            scanf ("%lf\n%lf", &A, &B);
+            resultado = A/B;
+            printf ("resultado = %.5lf\n", resultado);
+            
+        return (resultado);
+    }
+        
+        
+    return 0;
+}
+
         double Divisao (double A, double B){
             double resultado = 0.00000;
             scanf ("%lf\n%lf", &A, &B);
