@@ -11,10 +11,10 @@ int MDC ();
 int MMC ();
 double Equacao de Segundo Grau ();
 
-int main(){
-
 double A = 0.00000, B = 0.00000;
 int entrada = 0;
+
+int main(){
 
     //menu
 
