@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 double Soma (double A, double B);
 double Subtracao (double A, double B);
@@ -37,10 +37,10 @@ int input = 0;
     //calculos
 
         double Soma (double A, double B){
-
+double resultado = 0.0;
         scanf ("%lf\n%lf", &A, &B);
         resultado = A+B;
-        printf ("resultado = %.5lf\n", Soma);
+        printf ("resultado = %.5lf\n", resultado);
 
         return (resultado);
     }
