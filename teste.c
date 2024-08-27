@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 double Soma (double A, double B);
 double Subtracao (double A, double B);
@@ -35,6 +35,7 @@ int main(){
 		printf ("Digite o segundo numero:\n");
 		scanf ("%d", &entrada);
 	break;
+    }
     
     //calculos
 
@@ -71,5 +72,5 @@ int main(){
         return (resultado);    
         }
         
-        return 0;
+    return 0;
 }
