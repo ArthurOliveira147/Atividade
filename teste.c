@@ -4,12 +4,6 @@ double Soma (double A, double B);
 double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
-double Potenciasao (double A, );
-double Raiz Quadrada ();
-double Fatorial ();
-int MDC ();
-int MMC ();
-double Equacao de Segundo Grau ();
 
 double A = 0.00000, B = 0.00000;
 int entrada = 0;
@@ -41,24 +35,6 @@ int main(){
 		printf ("Digite o segundo numero:\n");
 		scanf ("%d", &entrada);
 	break;
-	  case 2:
-	    printf ("Digite o primeiro numero:\n");
-	    scanf ("%d", &entrada);
-	    printf ("Digite o segundo numero:\n");
-	    scanf ("%d", &entrada);
-	break;
-	  case 3:
-	    printf ("Digite o primiro numero:\n");
-	    scanf ("%d", &entrada);
-	    printf ("Digite o segundo numero:\n");
-	    scanf ("%d", &entrada);
-	break;
-      case 4:
-        printf ("Digite o primeiro numero:\n");
-		scanf ("%d", &entrada);
-		printf ("Digite o segundo numero:\n");
-		scanf ("%d", &entrada);	
-    }
     
     //calculos
 
@@ -84,5 +60,6 @@ int main(){
             resultado = A*B;
             
         return (resultado);
-    }
-        }
+    }    
+        return 0;
+}
