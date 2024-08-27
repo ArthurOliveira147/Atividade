@@ -54,12 +54,22 @@ int main(){
             
         return (resultado);
     }
-        double Multiplicacao(double A, double B){
+        double Multiplicacao (double A, double B){
             double resultado = 0.00000;
             scanf ("%lf\n%lf", &A, &B);
             resultado = A*B;
+            printf ("resultado = %.5lf\n", resultado);
             
         return (resultado);
-    }    
+    }
+        double Divisao (double A, double B){
+            double resultado = 0.00000;
+            scanf ("%lf\n%lf", &A, &B);
+            resultado = A/B;
+            printf ("resultado = %.5lf\n", resultado);
+            
+        return (resultado);    
+        }
+        
         return 0;
 }
