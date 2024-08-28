@@ -30,7 +30,7 @@ int main(){
     printf ("8. MDC\n");
     printf ("9. MMC\n");
     printf ("10. Equacao de Segundo Grau\n");
-    printf ("ATENCAO: as equacoes 5, 6, 7, 8, 9 e 10 nao estao funcionando\n");
+    printf ("ATENCAO: as equacoes 6, 7, 8, 9 e 10 nao estao funcionando\n");
     printf ("Escolha uma operacao:\n");
     scanf ("%d", &entrada);
     
