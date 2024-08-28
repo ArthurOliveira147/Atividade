@@ -64,9 +64,13 @@ int main(){
 	}
 	else {
 	    printf ("resultado = %.5lf\n", Divisao(A,B));
-	break;
-    }
-    
+	}
+    break;
+      case 5:
+        printf ("Digite um numero:\n");
+        scanf ("%lf", &A);
+        printf ("Digite o expoente desse numero:\n");
+        scanf ("%lf", &B);
 }
      return 0;
 }   
@@ -94,4 +98,8 @@ double Divisao (double A, double B){
     double resultado = 0.00000;
     resultado = A/B;
     return (resultado);
+}
+
+double Potenciacao (double A, double B){
+    
 }
