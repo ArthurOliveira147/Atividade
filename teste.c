@@ -110,8 +110,7 @@ double Potenciacao (double A, int B){
     double resultado = 1.00000;
 
     for (int i = 0; i < B; i++)
-    {//testando
-        
+    {
         resultado = A*resultado;
     }
     return (resultado);
