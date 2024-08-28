@@ -101,5 +101,5 @@ double Divisao (double A, double B){
 }
 
 double Potenciacao (double A, double B){
-    
+    for (int i = 0, i < 10, i ++);//muito provavelnte mudar valores
 }
