@@ -4,7 +4,7 @@ double Soma (double A, double B);
 double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
-double Potenciasao (double A, double B);
+double Potenciacao (double A, double B);
 //double Raiz Quadrada ();
 //double Fatorial ();
 //int MDC ();
