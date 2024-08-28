@@ -30,6 +30,7 @@ int main(){
     printf ("8. MDC\n");
     printf ("9. MMC\n");
     printf ("10. Equacao de Segundo Grau\n");
+    printf ("ATENCAO: as equacoes 5, 6, 7, 8, 9 e 10 nao estao funcionando\n");
     printf ("Escolha uma operacao:\n");
     scanf ("%d", &entrada);
     
@@ -42,6 +43,7 @@ int main(){
 		printf ("Digite o segundo numero:\n");
 		scanf ("%lf", &B);
 		printf ("resultado = %.5lf\n", Soma(A,B));
+	break;
 	  case 2:
 	    printf ("Digite o primeiro numero:\n");
 	    scanf ("%lf", &A);
@@ -73,6 +75,8 @@ int main(){
         scanf ("%lf", &A);
         printf ("Digite o expoente desse numero:\n");
         scanf ("%lf", &B);
+        printf ("resultado = %.5lf\n", Potenciacao(A,B));
+    break;
 }
      return 0;
 }   
@@ -102,6 +106,13 @@ double Divisao (double A, double B){
     return (resultado);
 }
 
-double Potenciacao (double A, double B){
-    for (int i = 0, A < 10, i ++);//mudar valores
+double Potenciacao (double A, int B){
+    double resultado = 1.00000;
+
+    for (int i = 0; i < B; i++)
+    {//testando
+        
+        resultado = A*resultado;
+    }
+    return (resultado);
 }
