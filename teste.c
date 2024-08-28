@@ -4,7 +4,7 @@ double Soma (double A, double B);
 double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
-//double Potenciasao ();
+double Potenciasao (double A, double B);
 //double Raiz Quadrada ();
 //double Fatorial ();
 //int MDC ();
@@ -59,10 +59,15 @@ int main(){
 	    scanf ("%lf", &A);
 	    printf ("Digite o segundo numero:\n");
 	    scanf ("%lf", &B);
+	if (B == 0){
+	    printf ("Isso nao e possivel\n");
+	}
+	else {
 	    printf ("resultado = %.5lf\n", Divisao(A,B));
 	break;
     }
     
+}
      return 0;
 }   
     //calculos
@@ -88,5 +93,5 @@ double Multiplicacao (double A, double B){
 double Divisao (double A, double B){
     double resultado = 0.00000;
     resultado = A/B;
-    return (resultado);    
+    return (resultado);
 }
