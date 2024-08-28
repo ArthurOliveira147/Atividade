@@ -32,6 +32,8 @@ int main(){
     printf ("10. Equacao de Segundo Grau\n");
     printf ("Escolha uma operacao:\n");
     scanf ("%d", &entrada);
+    
+    //funcionamento do codigo
 
     switch (entrada){
       case 1:
@@ -101,5 +103,5 @@ double Divisao (double A, double B){
 }
 
 double Potenciacao (double A, double B){
-    for (int i = 0, i < 10, i ++);//muito provavelnte mudar valores
+    for (int i = 0, A < 10, i ++);//mudar valores
 }
