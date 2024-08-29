@@ -4,8 +4,8 @@ double Soma (double A, double B);
 double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
-double Potenciacao (double A, double B);
-//double Raiz Quadrada ();
+double Potenciacao (double A, int B);
+double Raiz Quadrada (double A);
 //double Fatorial ();
 //int MDC ();
 //int MMC ();
@@ -77,6 +77,16 @@ int main(){
         scanf ("%lf", &B);
         printf ("resultado = %.5lf\n", Potenciacao(A,B));
     break;
+      case 6:
+        printf ("Digite um numero:\n");
+        scanf ("%lf", &A);
+    if (A == 0, A < 0){
+        printf ("Isso e impossivel\n");
+    }
+    else {
+        printf ("resultado = %.5lf\n", Raiz Quadrada(A));
+    }
+    
 }
      return 0;
 }   
@@ -114,4 +124,9 @@ double Potenciacao (double A, int B){
         resultado = A*resultado;
     }
     return (resultado);
+}
+
+double Raiz Quadrada (double A){
+    double resultado = 0.00000
+    A+1 = 0.5*(A+B/A); //mudar valores
 }
