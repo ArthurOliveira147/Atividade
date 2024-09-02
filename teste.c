@@ -5,7 +5,7 @@ double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
 double Potenciacao (double A, int B);
-double Raiz Quadrada (double A);
+double RaizQuadrada (double A);
 //double Fatorial ();
 //int MDC ();
 //int MMC ();
@@ -61,7 +61,7 @@ int main(){
 	  case 4:
 	    printf ("Digite o primeiro numero:\n");
 	    scanf ("%lf", &A);
-	    printf ("Digite o segundo numero:\n");
+	    printf ("Digite o segundo numero (NAO PODE SER 0):\n");
 	    scanf ("%lf", &B);
 	if (B == 0){
 	    printf ("Isso nao e possivel\n");
@@ -84,7 +84,7 @@ int main(){
         printf ("Isso e impossivel\n");
     }
     else {
-        printf ("resultado = %.5lf\n", Raiz Quadrada(A));
+        printf ("resultado = %.5lf\n", RaizQuadrada(A));
     }
     
 }
@@ -126,7 +126,8 @@ double Potenciacao (double A, int B){
     return (resultado);
 }
 
-double Raiz Quadrada (double A){
-    double resultado = 0.00000
-    A+1 = 0.5*(A+B/A); //mudar valores
+double RaizQuadrada (double A){
+    double resultado = 0.00000;
+    x+1 = 0.5 * (x+n/x); //mudar valores
+    return (resultado);
 }
