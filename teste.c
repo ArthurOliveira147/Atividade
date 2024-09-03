@@ -5,7 +5,7 @@ double Subtracao (double A, double B);
 double Multiplicacao (double A, double B);
 double Divisao (double A, double B);
 double Potenciacao (double A, int B);
-double RaizQuadrada (double A);
+double RaizQuadrada (int A);
 //double Fatorial ();
 //int MDC ();
 //int MMC ();
@@ -30,7 +30,7 @@ int main(){
     printf ("8. MDC\n");
     printf ("9. MMC\n");
     printf ("10. Equacao de Segundo Grau\n");
-    printf ("ATENCAO: as equacoes 6, 7, 8, 9 e 10 nao estao funcionando\n");
+    printf ("ATENCAO: as equacoes 7, 8, 9 e 10 nao estao funcionando\n");
     printf ("Escolha uma operacao:\n");
     scanf ("%d", &entrada);
     
@@ -126,8 +126,14 @@ double Potenciacao (double A, int B){
     return (resultado);
 }
 
-double RaizQuadrada (double A){
+double RaizQuadrada (int A){
     double resultado = 0.00000;
-    x+1 = 0.5 * (x+n/x); //mudar valores
+    double x = 0.0;
+    x = A; 
+   for(int i=0;i<100;i++)
+   {
+        x = 0.5 *(x+A/x);
+    }
+    resultado = x;
     return (resultado);
 }
