@@ -7,6 +7,7 @@ int main()
     int quant = 0;
     int vogaisA = 0;
     int vogaisE = 0;
+    int vogaisI = 0;
     
     scanf("%s",nome);
     
@@ -20,6 +21,11 @@ int main()
         {
             vogaisE++;
         }
+        else if(nome[i] == 'i' || nome[i] == 'I')
+        {
+            vogaisI++;
+        }
+        
         i++;
         quant++;
         
@@ -28,7 +34,8 @@ int main()
     printf("A quantidade de caracteres eh: %d\n", quant);
     printf("A quantidade de letras a eh: %d\n", vogaisA);
     printf("A quantidade de letras e eh: %d\n", vogaisE);
-
+    printf("A quantidade de letras i eh: %d\n", vogaisI);
+    
     return(0);
     
 }
