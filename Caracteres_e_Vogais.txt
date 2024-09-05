@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+    char nome[50];
+    int i = 0;
+    int quant = 0;
+    int vogaisA = 0;
+    int vogaisE = 0;
+    
+    scanf("%s",nome);
+    
+    while(nome[i] != '\0')
+    {
+        if(nome[i] == 'a' || nome[i] == 'A')
+        {
+            vogaisA++;
+        }
+        else if(nome[i] == 'e' || nome[i] == 'E')
+        {
+            vogaisE++;
+        }
+        i++;
+        quant++;
+        
+    }
+    
+    printf("A quantidade de caracteres eh: %d\n", quant);
+    printf("A quantidade de letras a eh: %d\n", vogaisA);
+    printf("A quantidade de letras e eh: %d\n", vogaisE);
+
+    return(0);
+    
+}
