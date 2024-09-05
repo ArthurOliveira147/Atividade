@@ -8,6 +8,8 @@ int main()
     int vogaisA = 0;
     int vogaisE = 0;
     int vogaisI = 0;
+    int vogaisO = 0;
+    int vogaisU = 0;
     
     scanf("%s",nome);
     
@@ -25,6 +27,14 @@ int main()
         {
             vogaisI++;
         }
+        else if(nome[i] == 'o' || nome[i] == 'O')
+        {
+            vogaisO++;
+        }
+        else if(nome[i] == 'u' || nome[i] == 'U')
+        {
+            vogaisU++;
+        }
         
         i++;
         quant++;
@@ -35,6 +45,8 @@ int main()
     printf("A quantidade de letras a eh: %d\n", vogaisA);
     printf("A quantidade de letras e eh: %d\n", vogaisE);
     printf("A quantidade de letras i eh: %d\n", vogaisI);
+    printf("A quantidade de letras o eh: %d\n", vogaisO);
+    printf("A quantidade de letras u eh: %d\n", vogaisU);
     
     return(0);
     
