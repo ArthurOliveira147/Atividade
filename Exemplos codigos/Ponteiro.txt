@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    
+    int *ponteiro;
+    int valor = 10;
+    
+    ponteiro = &valor;
+    
+    printf("endereco = %x", &valor);
+    printf("endereco = %x", ponteiro);
+    printf("valor = %d", *ponteiro);
+    
+    return 0;
+}
+
+// %x Valor em hexadecimal
+// & Acessar o endereco de memoria
+// & ponteiro end do ponteiro
