@@ -2,7 +2,7 @@
 
 int main() {
     
-        char nome[50];
+        char nome[100];
     int i = 0;
     int quant = 0;
     int vogaisA = 0;
@@ -12,7 +12,10 @@ int main() {
     int vogaisU = 0;
     int espacos = 0;
     
-    scanf("%s",nome);
+    do{
+        scanf("%c", &nome[i]);
+    }while(nome[i++] != '\n');
+    
     
     //Contando letras e vogais
     while(nome[i] != '\0')
@@ -37,21 +40,15 @@ int main() {
         {
             vogaisU++;
         }
-        else if(espacos == ' ')
+        else if(nome[i] == ' ')
         {
-        for(espacos = 0; espacos < 10; espacos++)
-    {
-        scanf("%c", &nome[espacos]);
-    
-    nome[espacos-1] = '\0';
-        
-    }
-    
-    ++espacos;
+            espacos++;
         }
         
         i++;
         quant++;
+        
+        nome[i-1] = '\0';
         
     }
     
