@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main() {
+    
+        char nome[50];
+    int i = 0;
+    int quant = 0;
+    int vogaisA = 0;
+    int vogaisE = 0;
+    int vogaisI = 0;
+    int vogaisO = 0;
+    int vogaisU = 0;
+    int espacos = 0;
+    
+    scanf("%s",nome);
+    
+    //Contando letras e vogais
+    while(nome[i] != '\0')
+    {
+        if(nome[i] == 'a' || nome[i] == 'A')
+        {
+            vogaisA++;
+        }
+        else if(nome[i] == 'e' || nome[i] == 'E')
+        {
+            vogaisE++;
+        }
+        else if(nome[i] == 'i' || nome[i] == 'I')
+        {
+            vogaisI++;
+        }
+        else if(nome[i] == 'o' || nome[i] == 'O')
+        {
+            vogaisO++;
+        }
+        else if(nome[i] == 'u' || nome[i] == 'U')
+        {
+            vogaisU++;
+        }
+        else if(espacos == ' ')
+        {
+        for(espacos = 0; espacos < 10; espacos++)
+    {
+        scanf("%c", &nome[espacos]);
+    
+    nome[espacos-1] = '\0';
+        
+    }
+    
+    ++espacos;
+        }
+        
+        i++;
+        quant++;
+        
+    }
+    
+    //Mostrando o resultado
+    printf("A quantidade de caracteres eh: %d\n", quant);
+    printf("A quantidade de letras A eh: %d\n", vogaisA);
+    printf("A quantidade de letras E eh: %d\n", vogaisE);
+    printf("A quantidade de letras I eh: %d\n", vogaisI);
+    printf("A quantidade de letras O eh: %d\n", vogaisO);
+    printf("A quantidade de letras U eh: %d\n", vogaisU);
+    printf("A quantidade de espacos eh: %d\n", espacos);
+
+    return 0;
+}
