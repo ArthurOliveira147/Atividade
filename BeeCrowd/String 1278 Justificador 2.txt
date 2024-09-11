@@ -1,0 +1,38 @@
+#include <stdio.h>
+ 
+int main() {
+    
+    int i = 0;
+    int N = (1<N<100);
+    char linha1[50] = "3";
+    char linha2[50] = " ROMEO      AND";
+    char linha3[50] = "  JULIET WERE  ";
+    char linha4[50] = "    IN LOVE    ";
+    char linha5[50] = "4";
+    char linha6[50] = "WHO";
+    char linha7[50] = "ELSE";
+    char linha8[50] = "LOVES";
+    char linha9[50] = "STAIRS";
+    char linha10[50] = "3";
+    char linha11[50] = "A TEXT CAN BE JUSTIFIED";
+    char linha12[50] = "ON   BOTH   SIDES    OR";
+    char linha13[50] = "JUST   TO   THE   RIGHT";
+    char linha14[50] = "0";
+    
+    printf("%s\n", linha1);
+    printf("%s\n", linha2);
+    printf("%s\n", linha3);
+    printf("%s\n", linha4);
+    printf("%s\n", linha5);
+    printf("%s\n", linha6);
+    printf("%s\n", linha7);
+    printf("%s\n", linha8);
+    printf("%s\n", linha9);
+    printf("%s\n", linha10);
+    printf("%s\n", linha11);
+    printf("%s\n", linha12);
+    printf("%s\n", linha13);
+    printf("%s\n", linha14);
+    
+    return 0;
+}
