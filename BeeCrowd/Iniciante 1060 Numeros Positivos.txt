@@ -1,14 +1,12 @@
-#include <stdio.h>
- 
 int main() {
  
     int positivos = 0;
-    double N1 = 0;
-    double N2 = 0;
-    double N3 = 0;
-    double N4 = 0;
-    double N5 = 0;
-    double N6 = 0;
+    double N1;
+    double N2;
+    double N3;
+    double N4;
+    double N5;
+    double N6;
     
     scanf ("%lf", N1);
     scanf ("%lf", N2);
