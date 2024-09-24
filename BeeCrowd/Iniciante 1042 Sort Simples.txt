@@ -1,14 +1,64 @@
-#include <stdio.h>
+{
  
-int main() {
- 
-    int a = 7;
-    int b = 21;
-    int c = -14;
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int menor = 0;
+    int meio = 0;
+    int maior = 0;
     
-    printf ("%d\n", c);
+    //oque e oque
+    if(a < b < c)
+    {
+        menor = a;
+        meio = b;
+        maior = c;
+    }
+    if else(a < c < b)
+    {
+        menor = a;
+        meio = c;
+        maior = b;
+    }
+    if else(b < a < c)
+    {
+        menor = b;
+        meio = a;
+        maior = c;
+    }  
+    if else(c < a < b)
+    {
+        menor = c;
+        meio = a;
+        maior = b;
+    }
+    
+    if else(b < c < a)
+    {
+        menor = b;
+        meio = c;
+        maior = a;
+    }
+    if else(c < b < a)
+    {
+        menor = c;
+        meio = b;
+        maior = a;
+    }
+    
+    //digitar os numeros
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    scanf ("%d", &c);
+    
+    //mostrar resultado
+    printf ("%d\n", menor);
+    printf ("%d\n", meio);
+    printf ("%d\n", maior);
+    printf (" \n");
     printf ("%d\n", a);
     printf ("%d\n", b);
- 
+    printf ("%d\n", c);
+    
     return 0;
 }
