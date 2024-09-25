@@ -1,14 +1,13 @@
 #include <stdio.h>
  
 int main() {
- 
-  //tipo de animal
+  
   int tipo_de_animal = 0;
     int vertebrado = 1;
     int invertebrado = 2;
     
-    printf ("1:Vertebrado\n");
-    printf ("2:Invertebrado\n");
+    printf ("1:Vertebrado");
+    printf ("2:Invertebrado");
     scanf ("%d\n", &tipo_de_animal)
     
     if (tipo_de_animal = 1)
@@ -33,7 +32,79 @@ int main() {
             
             if (alimentacao = 1)
             {
-                printf (aguia);
+                printf ("aguia");
+            }
+            if else (alimentacao = 2)
+            {
+                printf ("pomba");
+            }
+        }
+        if else (especie_animal = 2)
+        {
+            int alimentacao = 0;
+            int onivoro = 1;
+            int herbivoro =2;
+            
+            printf ("1_Onivoro");
+            printf ("2_Herbivoro");
+            scanf ("%\n", &alimentacao);
+            
+            if (alimentacao = 1)
+            {
+                printf ("homem");
+            }
+            if else (alimentacao = 2)
+            {
+                printf ("vaca");
+            }
+        }
+    }
+    if else (tipo_de_animal = 2)
+    {
+        int especie_animal = 0;
+        int inseto = 1;
+        int anelideo = 2;
+        
+        printf ("1_Inseto");
+        printf ("2_Anelideo");
+        scanf ("%d\n", &especie_animal);
+        
+        if (especie_animal = 1)
+        {
+            int alimentacao = 0;
+            int hematofago = 1;
+            int herbivoro = 2;
+            
+            printf ("1_hematofago");
+            printf ("2_herbivoro");
+            scanf ("%d\n", &alimentacao);
+            
+            if (alimentacao = 1)
+            {
+                printf ("pulga");
+            }
+            if else (alimantacao = 2)
+            {
+                printf ("lagarta");
+            }
+        }
+        if else (especie_animal = 2)
+        {
+            int alimentacao = 0;
+            int hematofago = 1;
+            int onivoro = 2;
+            
+            printf ("1_Hematofago");
+            printf ("2_Onivoro");
+            scanf ("%d\n", &alimentacao);
+            
+            if (alimentacao = 1)
+            {
+                printf ("sanguessuga");
+            }
+            if else (alimentacao = 2)
+            {
+                printf ("minhoca");
             }
         }
     }
