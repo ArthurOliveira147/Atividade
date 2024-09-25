@@ -21,39 +21,39 @@ int main() {
   int onivoro;
   int hematofago;
   
-  scanf ("%s\n", &A);
-  scanf ("%s\n", &B);
-  scanf ("%s\n", &C);
+  scanf ("%s\n", &A[20]);
+  scanf ("%s\n", &B[20]);
+  scanf ("%s\n", &C[20]);
   
-  if (A[i] = vertebrado, B[i] = ave, C[i] = carnivoro)
+  if (A[i] == vertebrado && B[i] == ave && C[i] == carnivoro)
   {
       printf ("aguia\n");
   }
-  else if (A[i] = vertebrado, B[i] = ave, C[i] = onivoro)
+  else if (A[i] == vertebrado && B[i] == ave && C[i] == onivoro)
   {
       printf ("pomba\n");
   }
-  else if (A[i] = vertebrado, B[i] = mamifero, C[i] = onivoro)
+  else if (A[i] == vertebrado && B[i] == mamifero && C[i] == onivoro)
   {
       printf ("homem\n");
   }
-  else if (A[i] = vertebrado, B[i] = mamifero, C[i] = herbivoro)
+  else if (A[i] == vertebrado && B[i] == mamifero && C[i] == herbivoro)
   {
       printf ("vaca\n");
   }
-  else if (A[i] = invertebrado, B[i] = inseto, C[i] = hematofago)
+  else if (A[i] == invertebrado && B[i] == inseto && C[i] == hematofago)
   {
       printf ("pulga\n");
   }
-  else if (A[i] = invertebrado, B[i] = inseto, C[i] = herbivoro)
+  else if (A[i] == invertebrado && B[i] == inseto && C[i] == herbivoro)
   {
       printf ("lagarta\n");
   }
-  else if (A[i] = invertebrado, B[i] = anelideo, C[i] = hematofago)
+  else if (A[i] == invertebrado && B[i] == anelideo && C[i] == hematofago)
   {
-      printf ("sanguessuga");
+      printf ("sanguessuga\n");
   }
-  else if (A[i] = invertebrado, B[i] = anelideo, C[i] = onivoro)
+  else if (A[i] == invertebrado && B[i] == anelideo && C[i] == onivoro)
   {
       printf ("minhoca\n");
   }
