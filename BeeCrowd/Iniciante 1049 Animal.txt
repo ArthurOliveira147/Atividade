@@ -3,24 +3,39 @@
 int main() {
  
   //tipo de animal
-  int tipo de animal = 0;
+  int tipo_de_animal = 0;
     int vertebrado = 1;
     int invertebrado = 2;
     
     printf ("1:Vertebrado\n");
     printf ("2:Invertebrado\n");
-    scanf ("%d\n", tipo de animal)
+    scanf ("%d\n", &tipo_de_animal)
     
-    if (tipo de animal = 1)
+    if (tipo_de_animal = 1)
     {
+        int especie_animal = 0;
+        int ave = 1;
+        int mamifero = 2;
+        
         printf ("1_Ave");
         printf ("2_Mamifero");
-        scanf ("%d\n", especie animal);
-    }
-    if else (tipo animal = 2);
-    {
-        printf ("1_Inseto");
-        printf ("2_Anelideo");
+        scanf ("%d\n", &especie_animal);
+        
+        if (especie_animal = 1)
+        {
+            int alimentacao = 0;
+            int carnivoro = 1;
+            int onivoro = 2;
+            
+            printf ("1_Carnivoro");
+            printf ("2_Onivoro");
+            scanf ("%d\n", &alimentacao);
+            
+            if (alimentacao = 1)
+            {
+                printf (aguia);
+            }
+        }
     }
 
     return 0;
