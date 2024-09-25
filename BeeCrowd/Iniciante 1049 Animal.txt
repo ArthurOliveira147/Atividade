@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+  //tipo de animal
+  int tipo de animal = 0;
+    int vertebrado = 1;
+    int invertebrado = 2;
+    
+    printf ("1:Vertebrado\n");
+    printf ("2:Invertebrado\n");
+    scanf ("%d\n", tipo de animal)
+    
+    if (tipo de animal = 1)
+    {
+        printf ("1_Ave");
+        printf ("2_Mamifero");
+        scanf ("%d\n", especie animal);
+    }
+    if else (tipo animal = 2);
+    {
+        printf ("1_Inseto");
+        printf ("2_Anelideo");
+    }
+
+    return 0;
+}
