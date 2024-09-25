@@ -2,112 +2,61 @@
  
 int main() {
   
-  int tipo_de_animal = 0;
-    int vertebrado = 1;
-    int invertebrado = 2;
-    
-    printf ("vertebrado\n");
-    printf ("invetebrado\n");
-    scanf ("%d\n", &tipo_de_animal);
-    
-    if (tipo_de_animal = 1)
-    {
-        int especie_animal = 0;
-        int ave = 1;
-        int mamifero = 2;
-        
-        printf ("ave\n");
-        printf ("mamifero\n");
-        scanf ("%d\n", &especie_animal);
-        
-        if (especie_animal = 1)
-        {
-            int alimentacao = 0;
-            int carnivoro = 1;
-            int onivoro = 2;
-            
-            printf ("carnivoro\n");
-            printf ("onivoro\n");
-            scanf ("%d\n", &alimentacao);
-            
-            if (alimentacao = 1)
-            {
-                printf ("aguia");
-            }
-            else if (alimentacao = 2)
-            {
-                printf ("pomba");
-            }
-        }
-        else if (especie_animal = 2)
-        {
-            int alimentacao = 0;
-            int onivoro = 1;
-            int herbivoro =2;
-            
-            printf ("onivoro\n");
-            printf ("herbivoro\n");
-            scanf ("%\n", &alimentacao);
-            
-            if (alimentacao = 1)
-            {
-                printf ("homem");
-            }
-            else if (alimentacao = 2)
-            {
-                printf ("vaca");
-            }
-        }
-    }
-    else if (tipo_de_animal = 2)
-    {
-        int especie_animal = 0;
-        int inseto = 1;
-        int anelideo = 2;
-        
-        printf ("inseto\n");
-        printf ("anelideo\n");
-        scanf ("%d\n", &especie_animal);
-        
-        if (especie_animal = 1)
-        {
-            int alimentacao = 0;
-            int hematofago = 1;
-            int herbivoro = 2;
-            
-            printf ("hematofago\n");
-            printf ("herbivoro\n");
-            scanf ("%d\n", &alimentacao);
-            
-            if (alimentacao = 1)
-            {
-                printf ("pulga");
-            }
-            else if (alimentacao = 2)
-            {
-                printf ("lagarta");
-            }
-        }
-        else if (especie_animal = 2)
-        {
-            int alimentacao = 0;
-            int hematofago = 1;
-            int onivoro = 2;
-            
-            printf ("hematofago\n");
-            printf ("onivoro\n");
-            scanf ("%d\n", &alimentacao);
-            
-            if (alimentacao = 1)
-            {
-                printf ("sanguessuga");
-            }
-            else if (alimentacao = 2)
-            {
-                printf ("minhoca");
-            }
-        }
-    }
+  //A = tipo de animal
+  //B = especie
+  //C = alimentacao
+  
+      char A[20];
+      char B[20];
+      char C[20];
+  int i = 0;
+  int vertebrado;
+  int invertebrado;
+  int ave;
+  int mamifero;
+  int inseto;
+  int anelideo;
+  int carnivoro;
+  int herbivoro;
+  int onivoro;
+  int hematofago;
+  
+  scanf ("%s\n", &A);
+  scanf ("%s\n", &B);
+  scanf ("%s\n", &C);
+  
+  if (A[i] = vertebrado, B[i] = ave, C[i] = carnivoro)
+  {
+      printf ("aguia\n");
+  }
+  else if (A[i] = vertebrado, B[i] = ave, C[i] = onivoro)
+  {
+      printf ("pomba\n");
+  }
+  else if (A[i] = vertebrado, B[i] = mamifero, C[i] = onivoro)
+  {
+      printf ("homem\n");
+  }
+  else if (A[i] = vertebrado, B[i] = mamifero, C[i] = herbivoro)
+  {
+      printf ("vaca\n");
+  }
+  else if (A[i] = invertebrado, B[i] = inseto, C[i] = hematofago)
+  {
+      printf ("pulga\n");
+  }
+  else if (A[i] = invertebrado, B[i] = inseto, C[i] = herbivoro)
+  {
+      printf ("lagarta\n");
+  }
+  else if (A[i] = invertebrado, B[i] = anelideo, C[i] = hematofago)
+  {
+      printf ("sanguessuga");
+  }
+  else if (A[i] = invertebrado, B[i] = anelideo, C[i] = onivoro)
+  {
+      printf ("minhoca\n");
+  }
 
     return 0;
 }
