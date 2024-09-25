@@ -2,10 +2,8 @@
  
 int main() {
 
-    //base
     double A = 0.0;
     double B = 0.0;
-    //altura
     double C = 0.0;
     
     double Area = 0.0;
@@ -18,8 +16,8 @@ int main() {
     Area = A+B*C/2;
     Perimetro = A+B+C;
     
-    printf ("%.1lf\n", Area);
-    printf ("%.1lf\n", Perimetro);
+    printf ("Area = %.1lf\n", Area);
+    printf ("Perimetro = %.1lf\n", Perimetro);
     
     return 0;
 }
