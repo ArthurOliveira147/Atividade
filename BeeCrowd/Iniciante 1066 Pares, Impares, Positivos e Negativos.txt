@@ -1,0 +1,122 @@
+#include <stdio.h>
+
+    int main() {
+ 
+    int par = 0;
+    int impar = 0;
+    int positivo = 0;
+    int negativo = 0;
+    int Npar = 0;
+    int Nimpar = 1;
+    int Npositivo = 0;
+    int Nnegativo = 0;
+    
+    double N1 = 0;
+    double N2 = 0;
+    double N3 = 0;
+    double N4 = 0;
+    double N5 = 0;
+    
+    for (Npar = 0; Npar<50; Npar++)
+    {
+        Npar = Npar+2;
+    }
+    for (Nimpar = 1; Nimpar<50; Nimpar++)
+    {
+        Nimpar = Nimpar+2;
+    }
+    
+    scanf ("%lf", N1);
+    scanf ("%lf", N2);
+    scanf ("%lf", N3);
+    scanf ("%lf", N4);
+    scanf ("%lf", N5);
+    
+    if(N1 == Npar)
+    {
+        par++;
+    }
+    else if(N1 == Nimpar)
+    {
+        impar++;
+    }
+    if(N2 == Npar)
+    {
+        par++;
+    }
+    else if(N2 == Nimpar)
+    {
+        impar++;
+    }
+    if(N3 == Npar)
+    {
+        par++;
+    }
+    else if(N3 == Nimpar)
+    {
+        impar++;
+    }
+    if(N4 == Npar)
+    {
+        par++;
+    }
+    else if(N4 == Nimpar)
+    {
+        impar++;
+    }
+    if(N5 == Npar)
+    {
+        par++;
+    }
+    else if(N5 == Nimpar)
+    {
+        impar++;
+    }
+    if(N1 > 0)
+    {
+        positivo++;
+    }
+    else if(N1 < 0)
+    {
+        negativo++;
+    }
+    if(N2 > 0)
+    {
+        positivo++;
+    }
+    else if(N2 < 0)
+    {
+        negativo++;
+    }
+    if(N3 > 0)
+    {
+        positivo++;
+    }
+    else if(N3 < 0)
+    {
+        negativo++;
+    }
+    if(N4 > 0)
+    {
+        positivo++;
+    }
+    else if(N4 < 0)
+    {
+        negativo++;
+    }
+    if(N5 > 0)
+    {
+        positivo++;
+    }
+    else if(N5 < 0)
+    {
+        negativo++;
+    }
+    
+    printf("%d valor(es) par(es)\n", par);
+    printf("%d valor(es) impar(es)\n", impar);
+    printf("%d valor(es) positivo(s)\n", positivo);
+    printf("%d valor(es) negativo(s)\n", negativo);
+ 
+    return 0;
+}
