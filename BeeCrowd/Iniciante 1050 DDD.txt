@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int Brasilia = 61;
+    int Salvador = 71;
+    int Sao Paulo = 11;
+    int Rio de janeiro = 21;
+    int Juiz de Fora = 32;
+    int Campinas = 19;
+    int Vitoria = 27;
+    int Belo Horizonte = 31;
+    int DDD = 0;
+    
+    scanf("%d\n", &DDD);
+    
+
+    return 0;
+}
