@@ -12,8 +12,12 @@ int main() {
     int Belo Horizonte = 31;
     int DDD = 0;
     
-    scanf("%d\n", &DDD);
+    scanf("%d", &DDD);
     
+    if (DDD == Brasilia)
+    {
+        printf("Brasilia\n");
+    }
 
     return 0;
 }
