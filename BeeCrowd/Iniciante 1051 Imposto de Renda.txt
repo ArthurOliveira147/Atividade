@@ -1,0 +1,38 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double salario = 0.00;
+    double valor = 0.00;
+    double resultado = 0.00;
+    
+    scanf ("%lf", &salario);
+    
+    if (salario <= 2000.00)
+    {
+        printf ("Isento\n");
+    }
+    else if (salario >= 2000.01 && salario <= 3000.00)
+    {
+        valor = salario- 2000.00;
+        resultado = valor/100*8;
+        
+        printf ("R$ %.2lf\n", resultado);
+    }
+    else if (salario >= 3000.01 && salario <= 4500.00)
+    {
+        valor = salario- 3000.00;
+        resultado = (valor/100*18)+ 80;
+        
+        printf ("R$ %.2lf\n", resultado);
+    }
+    else if (salario >= 4500.01)
+    {
+        valor = salario- 4500.00;
+        resultado = (valor/100*28)+ 270+ 80;
+        
+        printf ("R$ %.2lf\n", resultado);
+    }
+ 
+    return 0;
+}
