@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int distancia = 0;
+    int minutos = 0;
+    
+    scanf ("%d", &distancia);
+    
+    minutos = distancia*2;
+    
+    printf ("%d minutos\n", minutos);
+ 
+    return 0;
+}
