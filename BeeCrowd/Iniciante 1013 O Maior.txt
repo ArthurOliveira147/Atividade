@@ -5,14 +5,15 @@ int main() {
     int A = 0;
     int B = 0;
     int C = 0;
-    int MAIOR = 0;
+    int maiorAB = 0;
+    int maior = 0;
     
     scanf ("%d %d %d", &A, &B, &C);
     
+    maiorAB = (A+B+abs(A-B))/2;
+    maior = (maiorAB+C+abs(maiorAB-C))/2;
     
-    MAIOR = (A+B+AB(A-B))/2;
-    
-    
+    printf ("%d eh o maior\n", maior);
  
     return 0;
 }
