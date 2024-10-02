@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int km = 0;
+    double litros = 0.0;
+    double gasto = 0.000;
+    
+    scanf ("%d\n", &km);
+    scanf ("%lf", &litros);
+    
+    gasto = km/litros;
+    
+    printf ("%.3lf km/l\n", gasto);
+ 
+    return 0;
+}
