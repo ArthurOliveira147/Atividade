@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int A = 0;
+    int B = 0;
+    int C = 0;
+    int MAIOR = 0;
+    
+    scanf ("%d %d %d", &A, &B, &C);
+    
+    
+    MAIOR = (A+B+AB(A-B))/2;
+    
+    
+ 
+    return 0;
+}
