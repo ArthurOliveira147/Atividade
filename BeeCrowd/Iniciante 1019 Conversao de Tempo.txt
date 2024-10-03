@@ -1,0 +1,34 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int duracao = 0;
+    int horas = 0;
+    int minutos = 0;
+    int segundos = 0;
+    
+    scanf ("%d", &duracao);
+    
+while(duracao != 0)
+{
+    if (duracao >= 3600)
+    {
+        duracao = duracao-3600;
+        horas++;
+    }
+    else if (duracao < 3600 && duracao >= 60)
+    {
+        duracao = duracao-60;
+        minutos++;
+    }
+    else if (duracao < 60 && duracao >= 1)
+    {
+        duracao = duracao-1;
+        segundos++;
+    }
+}
+    
+    printf ("%d:%d:%d\n", horas, minutos, segundos);
+ 
+    return 0;
+}
