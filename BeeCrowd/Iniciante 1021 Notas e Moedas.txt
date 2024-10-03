@@ -1,0 +1,101 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    float dinheiro = 0.00;
+    int n100 = 0;
+    int n50 = 0;
+    int n20 = 0;
+    int n10 = 0;
+    int n5 = 0;
+    int n2 = 0;
+    int m1 = 0;
+    int m50 = 0;
+    int m25 = 0;
+    int m10 = 0;
+    int m05 = 0;
+    int m01 = 0;
+    
+    scanf ("%f", &dinheiro);
+    
+while(dinheiro != 0.00)
+{
+    if (dinheiro >= 100)
+    {
+        dinheiro = dinheiro-100;
+        n100++;
+    }
+    else if (dinheiro < 100 && dinheiro >= 50)
+    {
+        dinheiro = dinheiro-50;
+        n50++;
+    }
+    else if (dinheiro < 50 && dinheiro >= 20)
+    {
+        dinheiro = dinheiro-20;
+        n20++;
+    }
+    else if (dinheiro < 20 && dinheiro >= 10)
+    {
+        dinheiro = dinheiro-10;
+        n10++;
+    }
+    else if (dinheiro < 10 && dinheiro >= 5)
+    {
+        dinheiro = dinheiro-5;
+        n5++;
+    }
+    else if (dinheiro < 5 && dinheiro >= 2)
+    {
+        dinheiro = dinheiro-2;
+        n2++;
+    }
+    else if (dinheiro < 2 && dinheiro >= 1)
+    {
+        dinheiro = dinheiro-1;
+        m1++;
+    }
+    else if (dinheiro < 1 && dinheiro >= 0.50)
+    {
+        dinheiro = dinheiro-0.50;
+        m50++;
+    }
+    else if (dinheiro < 0.50 && dinheiro >= 0.25)
+    {
+        dinheiro = dinheiro-0.25;
+        m25++;
+    }
+    else if (dinheiro < 0.25 && dinheiro >= 0.10)
+    {
+        dinheiro = dinheiro-0.10;
+        m10++;
+    }
+    else if (dinheiro < 0.10 && dinheiro >= 0.05)
+    {
+        dinheiro = dinheiro-0.05;
+        m05++;
+    }
+    else if (dinheiro < 0.05 && dinheiro >= 0.01)
+    {
+        dinheiro = dinheiro-0.01;
+        m01++;
+    }
+}
+
+    printf ("NOTAS:\n");
+    printf ("%d nota(s) de R$ 100,00\n", n100);
+    printf ("%d nota(s) de R$ 50,00\n", n50);
+    printf ("%d nota(s) de R$ 20,00\n", n20);
+    printf ("%d nota(s) de R$ 10,00\n", n10);
+    printf ("%d nota(s) de R$ 5,00\n", n5);
+    printf ("%d nota(s) de R$ 2,00\n", n2);
+    printf ("MOEDAS:\n");
+    printf ("%d nota(s) de R$ 1,00\n", m1);
+    printf ("%d nota(s) de R$ 0,50\n", m50);
+    printf ("%d nota(s) de R$ 0,25\n", m25);
+    printf ("%d nota(s) de R$ 0,10\n", m10);
+    printf ("%d nota(s) de R$ 0,05\n", m05);
+    printf ("%d nota(s) de R$ 0,01\n", m01);
+ 
+    return 0;
+}
