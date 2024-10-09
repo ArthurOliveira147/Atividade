@@ -1,0 +1,33 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int N[10];
+    int V = 0;
+    
+    scanf ("%d", &V);
+    
+    N[0] = V;
+    N[1] = N[0]*2;
+    N[2] = N[1]*2;
+    N[3] = N[2]*2;
+    N[4] = N[3]*2;
+    N[5] = N[4]*2;
+    N[6] = N[5]*2;
+    N[7] = N[6]*2;
+    N[8] = N[7]*2;
+    N[9] = N[8]*2;
+    
+    printf ("N[0] = %d\n", N[0]);
+    printf ("N[1] = %d\n", N[1]);
+    printf ("N[2] = %d\n", N[2]);
+    printf ("N[3] = %d\n", N[3]);
+    printf ("N[4] = %d\n", N[4]);
+    printf ("N[5] = %d\n", N[5]);
+    printf ("N[6] = %d\n", N[6]);
+    printf ("N[7] = %d\n", N[7]);
+    printf ("N[8] = %d\n", N[8]);
+    printf ("N[9] = %d\n", N[9]);
+ 
+    return 0;
+}
