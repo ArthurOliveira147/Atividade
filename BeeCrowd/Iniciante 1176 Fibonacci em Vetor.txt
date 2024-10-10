@@ -4,7 +4,22 @@ int main() {
  
     long long int T = 0; 
     int fib[60];
+    int i;
+    int X = 0;
+    int n1 = 0;
+    int n2 = 1;
     
+    scanf ("%d", &T);
+    
+    for(i = 1; i<=T; i++)
+    {
+        fib[i] = n1+n2;
+        n1 = n2;
+        n2 = n1+n2;
+    }
+    X = fib[i];
+    
+    printf ("Fib(%d) = %d\n", T, X);
  
     return 0;
 }
