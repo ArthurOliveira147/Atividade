@@ -1,0 +1,10 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    long long int T = 0; 
+    int fib[60];
+    
+ 
+    return 0;
+}
