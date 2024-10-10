@@ -1,0 +1,35 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int N[20];
+    int i;
+    
+    for (i = 0; i<20; i++)
+    {
+        scanf ("%d", &N[i]);
+    }
+    
+    printf ("N[0] = %d\n", N[19]);
+    printf ("N[1] = %d\n", N[18]);
+    printf ("N[2] = %d\n", N[17]);
+    printf ("N[3] = %d\n", N[16]);
+    printf ("N[4] = %d\n", N[15]);
+    printf ("N[5] = %d\n", N[14]);
+    printf ("N[6] = %d\n", N[13]);
+    printf ("N[7] = %d\n", N[12]);
+    printf ("N[8] = %d\n", N[11]);
+    printf ("N[9] = %d\n", N[10]);
+    printf ("N[10] = %d\n", N[9]);
+    printf ("N[11] = %d\n", N[8]);
+    printf ("N[12] = %d\n", N[7]);
+    printf ("N[13] = %d\n", N[6]);
+    printf ("N[14] = %d\n", N[5]);
+    printf ("N[15] = %d\n", N[4]);
+    printf ("N[16] = %d\n", N[3]);
+    printf ("N[17] = %d\n", N[2]);
+    printf ("N[18] = %d\n", N[1]);
+    printf ("N[19] = %d\n", N[0]);
+ 
+    return 0;
+}
