@@ -2,24 +2,29 @@
  
 int main() {
  
-    long long int T = 0; 
-    int fib[60];
+    int T = 0; 
+    long long int fib[60];
     int i;
     int X = 0;
     int n1 = 0;
     int n2 = 1;
     
+    fib[0] = 0;
+    fib[1] = 1;
+    
+    for(int i = 2; i<= 60; i++)
+    {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+    
     scanf ("%d", &T);
     
     for(i = 1; i<=T; i++)
     {
-        fib[i] = n1+n2;
-        n1 = n2;
-        n2 = n1+n2;
+        scanf("%d",&X);
+        printf ("Fib(%d) = %lld\n", X, fib[X]);   
     }
-    X = fib[i];
-    
-    printf ("Fib(%d) = %d\n", T, X);
+
  
     return 0;
 }
