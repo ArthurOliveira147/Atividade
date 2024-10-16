@@ -1,0 +1,26 @@
+Q1-Com suas palavras explique o que é um banco de dados.
+
+R: Um banco de dados são informções ou dados armazenados digitalmente
+
+Q2-Diferencie dado de informação.
+
+R: Um dado pode ser um numero ou um nome ainda não procesados e informações são o contexto dos dados 
+o sentido deles
+
+Q3-Descreva a função de um SGBD e site vantagens e desvantagens conforme visto em sala.
+
+R: O SGBD serve para mater informaçõe e tornalas disponiveis quando solicitadas e uma vantagem é a segurança e
+umadesvantagem é o custo para se manter os servidores em que os dados estão armazenados
+
+Q4-O que é banco de dados relacional e como ele funciona. Evidêncie a diferença desse modelo em relação aos
+outros modelos existentes.
+
+R: Um banco de dados relacional é um conjunto de informações que organiza os dados em relações predefinidas
+em uma ou mais tebelas, a principal diferença e a forma como os dados são armazenados e organizados enquanto
+um banco de dados relacional armazena dados de maneira tabular e baseada em regras os outros não relacionais
+não
+
+Q5-Com base no modelo de banco de dados relacional forneça um exemplo de duas tabelas com suas tuplas e
+atribuir e o relacionamento existente entre elas.
+
+R:
