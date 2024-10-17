@@ -23,3 +23,8 @@ não
 Q5-Com base no modelo de banco de dados relacional forneça um exemplo de duas tabelas com suas tuplas e
 atribuir e o relacionamento existente entre elas.
 
+Nome         |CPF  |Data de Nacimento|Tipo Sanguíneo
+Andre Costas |56421|23/10/1998       |O+
+Iara Carvalho|89475|07/06/2000       |B-
+Maria Mocelin|15814|31/12/1988       |AB+
+Luiz Oliveira|98173|01/01/2001       |A+
