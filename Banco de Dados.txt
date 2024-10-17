@@ -23,4 +23,3 @@ não
 Q5-Com base no modelo de banco de dados relacional forneça um exemplo de duas tabelas com suas tuplas e
 atribuir e o relacionamento existente entre elas.
 
-R:
