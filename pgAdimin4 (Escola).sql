@@ -22,4 +22,4 @@ INSERT INTO disciplina (nome_disciplina) VALUES ('Inglês');
 INSERT INTO disciplina (nome_disciplina) VALUES ('Matematica');
 INSERT INTO disciplina (nome_disciplina) VALUES ('Portuges');
 
-INSERT INTO professor (tel_prof,)
+INSERT INTO professor (tel_prof,cpf_prof,nome_prof,endereco_prof) VALUES ('(42)9934-2365','57392384','')
