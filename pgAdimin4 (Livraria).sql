@@ -39,6 +39,6 @@ CREATE TABLE itens_vendas(
 
 INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('27453','Machado de Assis','21/06/1839','Brasileiro');
 INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('43264','J.K.Rowling','31/07/1965','Inglesa');
-INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('43732','')
-INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES 
-INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES
+INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('43732','','','');
+INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('','','','');
+INSERT INTO autor (id_autor, nome_autor, nascimento, nacionalidade) VALUES ('','','','');
