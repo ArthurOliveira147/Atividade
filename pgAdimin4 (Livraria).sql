@@ -37,6 +37,12 @@ CREATE TABLE itens_vendas(
   preco_unitario decimal(10, 2)
 );
 
+SELECT * FROM autor;
+SELECT * FROM livros;
+SELECT * FROM clientes;
+SELECT * FROM vendas;
+SELECT * FROM itens_vendas;
+
 INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Machado de Assis','21/06/1839','Brasil');
 INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('J.K.Rowling','31/07/1965','Reino Unido');
 INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Dr.Seuss','02/03/1904','EUA');
