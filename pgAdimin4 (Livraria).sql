@@ -61,8 +61,8 @@ INSERT INTO vendas (data_venda, valor_total) VALUES ('09/11/2007', 'R$ ');
 INSERT INTO vendas (data_venda, valor_total) VALUES ('14/01/2005', 'R$ ');
 INSERT INTO vendas (data_venda, valor_total) VALUES ('30/10/2020', 'R$ ');
 
-INSERT INTO itens_vendas 
-INSERT INTO itens_vendas 
-INSERT INTO itens_vendas 
-INSERT INTO itens_vendas 
-INSERT INTO itens_vendas 
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
