@@ -61,14 +61,14 @@ INSERT INTO clientes (nome_cliente, email_cliente, telefone_cliente, data_cadast
 INSERT INTO clientes (nome_cliente, email_cliente, telefone_cliente, data_cadastro) VALUES ('Carlos Alberto', 'CarlosAlberto@gmail.com', '(11)5549-4563', '05/11/1995');
 INSERT INTO clientes (nome_cliente, email_cliente, telefone_cliente, data_cadastro) VALUES ('Julia Mocelin', 'julia.mocelin@gmail.com', '(53)4275-4387', '01/01/2000');
 
-INSERT INTO vendas (data_venda, valor_total) VALUES ('12/05/2010', 'R$ ');
-INSERT INTO vendas (data_venda, valor_total) VALUES ('03/08/2024', 'R$ ');
-INSERT INTO vendas (data_venda, valor_total) VALUES ('09/11/2007', 'R$ ');
-INSERT INTO vendas (data_venda, valor_total) VALUES ('14/01/2005', 'R$ ');
-INSERT INTO vendas (data_venda, valor_total) VALUES ('30/10/2020', 'R$ ');
+INSERT INTO vendas (data_venda, valor_total) VALUES ('12/05/2010', 'R$ 500,00');
+INSERT INTO vendas (data_venda, valor_total) VALUES ('03/08/2024', 'R$ 500,00');
+INSERT INTO vendas (data_venda, valor_total) VALUES ('09/11/2007', 'R$ 500,00');
+INSERT INTO vendas (data_venda, valor_total) VALUES ('14/01/2005', 'R$ 500,00');
+INSERT INTO vendas (data_venda, valor_total) VALUES ('30/10/2020', 'R$ 500,00');
 
-INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
-INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
-INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
-INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
-INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('', 'R$ ');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('15', 'R$ 150,00');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('10', 'R$ 100,00');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('20', 'R$ 200,00');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('15', 'R$ 150,00');
+INSERT INTO itens_vendas (quantidade, preco_unitario) VALUES ('20', 'R$ 200,00');
