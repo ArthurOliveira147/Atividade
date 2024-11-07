@@ -8,7 +8,7 @@ CREATE TABLE autor(
 CREATE TABLE livros(
   id_livro serial PRIMARY KEY,
   titulo varchar(15),
-  id_autor serial FOREIGN KEY,
+  autor_idfk int, FOREIGN KEY (autor_idfk) REFERENCES autor(id_autor)
   publicacao date,
   preco decimal(10, 2),
   estoque int
@@ -23,19 +23,24 @@ CREATE TABLE clientes(
 );
 
 CREATE TABLE vendas(
-  id_venda int PRIMARY KEY,
-  id_cliente int FOREIGN KEY,
-  data_venda date,
+  id_venda serial PRIMARY KEY,
+  cliente_idfk int, FOREIGN KEY (cliente_idfk) REFERENCES clientes(id_cliente)
   valor_total decimal (10, 2)
 );
 
 CREATE TABLE itens_vendas(
   id_iten serial PRIMARY KEY,
-  id_venda serial FOREIGN KEY,
-  id_livro serial FOREIGN KEY,
+  venda_idfk int, FOREIGN KEY (venda_idfk) REFERENCES vendas(id_venda)
+  livro_idfk int, FOREIGN KEY (livro_idfk) REFERENCES livros(id_livro)
   quantidade int,
   preco_unitario decimal(10, 2)
 );
+
+DROP TABLE autor;
+DROP TABLE livros;
+DROP TABLE clientes;
+DROP TABLE vendas;
+DROP TABLE itens_vendas;
 
 SELECT * FROM autor;
 SELECT * FROM livros;
@@ -43,11 +48,11 @@ SELECT * FROM clientes;
 SELECT * FROM vendas;
 SELECT * FROM itens_vendas;
 
-INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Machado de Assis','21/06/1839','Brasil');
-INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('J.K.Rowling','31/07/1965','Reino Unido');
-INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Dr.Seuss','02/03/1904','EUA');
-INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Monteiro Lobato','18/04/1882','Brasil');
-INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('J.R.R. Tolkien','03/01/1892','Africa do Sul');
+INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Machado de Assis','21/06/1839','Brasileiro');
+INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('J.K.Rowling','31/07/1965','Inglesa');
+INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Dr.Seuss','02/03/1904','Estado Unidense');
+INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('Monteiro Lobato','18/04/1882','Brasileiro');
+INSERT INTO autor (nome_autor, nascimento, nacionalidade) VALUES ('J.R.R. Tolkien','03/01/1892','Africano');
 
 INSERT INTO livros (titulo, publicacao, preco, estoque) VALUES ('O Alienista', '15/03/1882', 'R$ 31,40', '20');
 INSERT INTO livros (titulo, publicacao, preco, estoque) VALUES ('Harry Poter', '26/06/1997', 'R$ 55,74', '15');
