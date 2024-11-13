@@ -1,4 +1,4 @@
-CREATE TABLE cliente
+CREATE TABLE cliente(
  cod_cliente serial PRIMARY KEY,
  nome_cliente varchar(20),
  cpf int,
@@ -7,23 +7,26 @@ CREATE TABLE cliente
  numero int,
  cidade varchar(15),
  estado varchar(15),
- cep int;
+ cep int
+);
 
-CREATE TABLE pedido
+CREATE TABLE pedido(
  num_pedido serial PRIMARY KEY,
  cliente_codfk int, FOREIGN KEY (cliente_codfk) REFERENCES cliente (cod_cliente),
  data_criacao date,
- status varchar(15);
+ status varchar(15)
+);
 
-CREATE TABLE produto
+CREATE TABLE produto(
  cod_produto serial PRIMARY KEY,
  pedido_nfk int, FOREIGN KEY (pedido_nfk) REFERENCES pedido (num_pedido),
  nome_produto varchar(20),
  descricao varchar(25),
  preco_unidade decimal(10, 2),
- quant_estoque int;
+ quant_estoque int
+);
 
-CREATE TABLE fornecedor
+CREATE TABLE fornecedor(
  cod_fornecedor serial PRIMARY KEY,
  produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
  nome_fornecedor varchar,
@@ -32,13 +35,15 @@ CREATE TABLE fornecedor
  numero int,
  cidade varchar(15),
  estado varchar(15),
- cep int;
+ cep int
+);
 
-CREATE TABLE produto_pedido
+CREATE TABLE produto_pedido(
  cod_pp serial PRIMARY KEY,
  produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
  pedido_numfk int, FOREIGN KEY (pedido_numfk) REFERENCES pedido (num_pedido),
- preco_total decimal (10, 2);
+ preco_total decimal (10, 2)
+);
 
  SELECT * FROM cliente;
  SELECT * FROM pedido;
