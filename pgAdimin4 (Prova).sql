@@ -20,7 +20,7 @@ CREATE TABLE produto
  pedido_nfk int, FOREIGN KEY (pedido_nfk) REFERENCES pedido (num_pedido),
  nome_produto varchar(20),
  descricao varchar(25),
- preco_unidade 
+ preco_unidade decimal(10, 2),
  quant_estoque int;
 
 CREATE TABLE fornecedor
@@ -38,7 +38,7 @@ CREATE TABLE produto_pedido
  cod_pp serial PRIMARY KEY,
  produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
  pedido_numfk int, FOREIGN KEY (pedido_numfk) REFERENCES pedido (num_pedido),
- preco_total 
+ preco_total decimal (10, 2);
 
  SELECT * FROM cliente;
  SELECT * FROM pedido;
