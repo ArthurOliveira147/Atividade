@@ -19,7 +19,7 @@ CREATE TABLE produtos(
  quant_estoque int
 );
 
-CREATE TABLE fornecedor(
+CREATE TABLE fornecedores(
  cod_fornecedor int PRIMARY KEY,
  produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
  nome_fornecedor varchar(20),
@@ -81,9 +81,17 @@ INSERT INTO produtos (cod_produto, nome_produto, descricao, preco_unidade, quant
  (107,	'HD Externo Seagate',	'HD 1TB USB 3.0',	350.00,	40),
  (108,	'SSD Kingston',	'SSD 512GB',	400.00,	35),
  (109,	'Câmera Logitech',	'Câmera de videoconferência',	950.00,	10),
- (110,	'Caixa de Som JBL',	'Caixa de som Bluetooth',	300.00,	20);
+ (110,	'Caixa de Som JBL',	'Caixa de som Bluetooth',	300.00,	20);]
 
-IINSERT INTO pedidos (num_pedido, cod_cliente, data_criacao, status) VALUES
+ INSERT INTO fornecedores (cod_fornecedor, nome_fornecedor, CNPJ, telefone, rua, numero, cidade, estado, CEP) VALUES
+ (201,	'Tech Distribuidora',	'12345678000190',	'(11) 4000-3000',	'Rua da Liberdade',	500,	'São Paulo',	'SP',	'01500-000'),
+ (202,	'Eletrônicos Brasil',	'98765432000180',	'(21) 2500-4000',	'Rua das Flores',	80,	'Rio de Janeiro',	'RJ',	'20030-001'),
+ (203,	'FastTech',	'34567890000150',	'(31) 3500-3200',	'Av. Amazonas',	1200,	'Belo Horizonte',	'MG',	'30140-000'),
+ (204,	'Digital Solutions',	'45678912000170',	'(41) 3200-2500',	'Av. do Comércio',	750,	'Curitiba',	'PR',	'80060-050'),
+ (205,	'PC Hardware',	'56789123000130',	'(51) 3200-3200',	'Rua Sete de Setembro',	999,	'Porto Alegre',	'RS',	'90030-020'),
+ (206,	'EletroShop',	'67891234000110',	'(21) 2500-8000',	'Av. Presidente',	100,	'Rio de Janeiro',	'RJ',	'20040-040');
+
+INSERT INTO pedido (num_pedido, cod_cliente, data_criacao, status) VALUES
  (1001,	1,	'2024-10-01',	'Concluído'),
  (1002,	2,	'2024-10-03',	'Em andamento'),
  (1003,	3,	'2024-10-05',	'Concluído'),
