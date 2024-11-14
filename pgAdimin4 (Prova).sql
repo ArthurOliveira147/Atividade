@@ -1,5 +1,5 @@
 CREATE TABLE cliente(
- cod_cliente serial PRIMARY KEY,
+ cod_cliente int PRIMARY KEY,
  nome_cliente varchar(20),
  CPF bigint,
  data_nasc date,
@@ -114,3 +114,6 @@ INSERT INTO produto_pedido (pedido_numfk, produto_codfk, quantidade_itens, preco
  (1006,	107,	3,	1050.00),
  (1007,	108,	2,	800.00),
  (1008,	109,	1,	950.00);
+
+SELECT nome_cliente FROM cliente;
+INNER JOIN pedido, ON cod_cliente = num_pedido;
