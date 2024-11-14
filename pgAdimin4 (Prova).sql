@@ -10,6 +10,13 @@ CREATE TABLE cliente(
  CEP varchar
 );
 
+CREATE TABLE pedido(
+ num_pedido int PRIMARY KEY,
+ cod_cliente int, FOREIGN KEY (cod_cliente) REFERENCES cliente (cod_cliente),
+ data_criacao date,
+ status varchar(15)
+);
+
 CREATE TABLE produtos(
  cod_produto int PRIMARY KEY,
  pedido_nfk int, FOREIGN KEY (pedido_nfk) REFERENCES pedido (num_pedido),
@@ -21,7 +28,7 @@ CREATE TABLE produtos(
 
 CREATE TABLE fornecedores(
  cod_fornecedor int PRIMARY KEY,
- produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
+ produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produtos (cod_produto),
  nome_fornecedor varchar(20),
  CNPJ bigint,
  telefone varchar(15),
@@ -32,16 +39,9 @@ CREATE TABLE fornecedores(
  CEP varchar(10)
 );
 
-CREATE TABLE pedido(
- num_pedido int PRIMARY KEY,
- cod_cliente int, FOREIGN KEY (cod_cliente) REFERENCES cliente (cod_cliente),
- data_criacao date,
- status varchar(15)
-);
-
 CREATE TABLE produto_pedido(
  cod_pp serial PRIMARY KEY,
- produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produto (cod_produto),
+ produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produtos (cod_produto),
  pedido_numfk int, FOREIGN KEY (pedido_numfk) REFERENCES pedido (num_pedido),
  quantidade_itens int,
  preco_total decimal (10, 2)
@@ -71,26 +71,6 @@ INSERT INTO cliente (cod_cliente, nome_cliente, CPF, data_nasc, rua, numero, cid
  (9,	'Julia Souza',	'11235813213',	'1992-12-10',	'Rua Augusta',	800,	'São Paulo',	'SP',	'01400-400'),
  (10,	'Bruno Oliveira',	'99887722112',	'1991-03-18',	'Av. Angélica',	350,	'São Paulo',	'SP',	'01227-200');
 
-INSERT INTO produtos (cod_produto, nome_produto, descricao, preco_unidade, quant_estoque) VALUE
- (101,	'Notebook Dell',	'Notebook i5 8GB 256GB SSD',	3500.00,	15),
- (102,	'Smartphone Samsung',	'Galaxy S21 128GB',	2800.00,	30)
- (103,	'Impressora HP',	'Impressora a jato de tinta',	600.00,	20),
- (104,	'Teclado Mecânico',	'Teclado RGB gamer',	250.00,	50),
- (105,	'Mouse Logitech',	'Mouse óptico sem fio',	120.00,	60),
- (106,	'Monitor LG',	'Monitor 24 polegadas',	700.00,	25),
- (107,	'HD Externo Seagate',	'HD 1TB USB 3.0',	350.00,	40),
- (108,	'SSD Kingston',	'SSD 512GB',	400.00,	35),
- (109,	'Câmera Logitech',	'Câmera de videoconferência',	950.00,	10),
- (110,	'Caixa de Som JBL',	'Caixa de som Bluetooth',	300.00,	20);]
-
- INSERT INTO fornecedores (cod_fornecedor, nome_fornecedor, CNPJ, telefone, rua, numero, cidade, estado, CEP) VALUES
- (201,	'Tech Distribuidora',	'12345678000190',	'(11) 4000-3000',	'Rua da Liberdade',	500,	'São Paulo',	'SP',	'01500-000'),
- (202,	'Eletrônicos Brasil',	'98765432000180',	'(21) 2500-4000',	'Rua das Flores',	80,	'Rio de Janeiro',	'RJ',	'20030-001'),
- (203,	'FastTech',	'34567890000150',	'(31) 3500-3200',	'Av. Amazonas',	1200,	'Belo Horizonte',	'MG',	'30140-000'),
- (204,	'Digital Solutions',	'45678912000170',	'(41) 3200-2500',	'Av. do Comércio',	750,	'Curitiba',	'PR',	'80060-050'),
- (205,	'PC Hardware',	'56789123000130',	'(51) 3200-3200',	'Rua Sete de Setembro',	999,	'Porto Alegre',	'RS',	'90030-020'),
- (206,	'EletroShop',	'67891234000110',	'(21) 2500-8000',	'Av. Presidente',	100,	'Rio de Janeiro',	'RJ',	'20040-040');
-
 INSERT INTO pedido (num_pedido, cod_cliente, data_criacao, status) VALUES
  (1001,	1,	'2024-10-01',	'Concluído'),
  (1002,	2,	'2024-10-03',	'Em andamento'),
@@ -102,6 +82,26 @@ INSERT INTO pedido (num_pedido, cod_cliente, data_criacao, status) VALUES
  (1008,	8,	'2024-10-12',	'Concluído'),
  (1009,	9,	'2024-10-15',	'Cancelado'),
  (1010,	10,	'2024-10-18',	'Em andamento');
+
+INSERT INTO produtos (cod_produto, nome_produto, descricao, preco_unidade, quant_estoque) VALUES
+ (101,	'Notebook Dell',	'Notebook i5 8GB 256GB SSD',	3500.00,	15),
+ (102,	'Smartphone Samsung',	'Galaxy S21 128GB',	2800.00,	30),
+ (103,	'Impressora HP',	'Impressora a jato de tinta',	600.00,	20),
+ (104,	'Teclado Mecânico',	'Teclado RGB gamer',	250.00,	50),
+ (105,	'Mouse Logitech',	'Mouse óptico sem fio',	120.00,	60),
+ (106,	'Monitor LG',	'Monitor 24 polegadas',	700.00,	25),
+ (107,	'HD Externo Seagate',	'HD 1TB USB 3.0',	350.00,	40),
+ (108,	'SSD Kingston',	'SSD 512GB',	400.00,	35),
+ (109,	'Câmera Logitech',	'Câmera de videoconferência',	950.00,	10),
+ (110,	'Caixa de Som JBL',	'Caixa de som Bluetooth',	300.00,	20);
+
+INSERT INTO fornecedores (cod_fornecedor, nome_fornecedor, CNPJ, telefone, rua, numero, cidade, estado, CEP) VALUES
+ (201,	'Tech Distribuidora',	'12345678000190',	'(11) 4000-3000',	'Rua da Liberdade',	500,	'São Paulo',	'SP',	'01500-000'),
+ (202,	'Eletrônicos Brasil',	'98765432000180',	'(21) 2500-4000',	'Rua das Flores',	80,	'Rio de Janeiro',	'RJ',	'20030-001'),
+ (203,	'FastTech',	'34567890000150',	'(31) 3500-3200',	'Av. Amazonas',	1200,	'Belo Horizonte',	'MG',	'30140-000'),
+ (204,	'Digital Solutions',	'45678912000170',	'(41) 3200-2500',	'Av. do Comércio',	750,	'Curitiba',	'PR',	'80060-050'),
+ (205,	'PC Hardware',	'56789123000130',	'(51) 3200-3200',	'Rua Sete de Setembro',	999,	'Porto Alegre',	'RS',	'90030-020'),
+ (206,	'EletroShop',	'67891234000110',	'(21) 2500-8000',	'Av. Presidente',	100,	'Rio de Janeiro',	'RJ',	'20040-040');
 
 INSERT INTO produto_pedido (num_pedido, cod_produto, quantidade_itens, preco_total) VALUES
  (1001,	101,	1,	3500.00),
