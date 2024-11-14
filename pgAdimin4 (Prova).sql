@@ -41,8 +41,8 @@ CREATE TABLE fornecedores(
 
 CREATE TABLE produto_pedido(
  cod_pp serial PRIMARY KEY,
- produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produtos (cod_produto),
  pedido_numfk int, FOREIGN KEY (pedido_numfk) REFERENCES pedido (num_pedido),
+ produto_codfk int, FOREIGN KEY (produto_codfk) REFERENCES produtos (cod_produto),
  quantidade_itens int,
  preco_total decimal (10, 2)
 );
@@ -103,7 +103,7 @@ INSERT INTO fornecedores (cod_fornecedor, nome_fornecedor, CNPJ, telefone, rua, 
  (205,	'PC Hardware',	'56789123000130',	'(51) 3200-3200',	'Rua Sete de Setembro',	999,	'Porto Alegre',	'RS',	'90030-020'),
  (206,	'EletroShop',	'67891234000110',	'(21) 2500-8000',	'Av. Presidente',	100,	'Rio de Janeiro',	'RJ',	'20040-040');
 
-INSERT INTO produto_pedido (num_pedido, cod_produto, quantidade_itens, preco_total) VALUES
+INSERT INTO produto_pedido (pedido_numfk, produto_codfk, quantidade_itens, preco_total) VALUES
  (1001,	101,	1,	3500.00),
  (1001,	104,	2,	500.00),
  (1002,	102,	1,	2800.00),
