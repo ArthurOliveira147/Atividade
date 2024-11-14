@@ -49,14 +49,14 @@ CREATE TABLE produto_pedido(
 
 DROP TABLE cliente;
 DROP TABLE pedido;
-DROP TABLE produto;
-DROP TABLE fornecedor;
+DROP TABLE produtos;
+DROP TABLE fornecedores;
 DROP TABLE produto_pedido;
 
  SELECT * FROM cliente;
  SELECT * FROM pedido;
- SELECT * FROM produto;
- SELECT * FROM fornecedor;
+ SELECT * FROM produtos;
+ SELECT * FROM fornecedores;
  SELECT * FROM produto_pedido;
 
 INSERT INTO cliente (cod_cliente, nome_cliente, CPF, data_nasc, rua, numero, cidade, estado, CEP) VALUES
