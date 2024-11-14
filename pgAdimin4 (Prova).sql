@@ -116,4 +116,3 @@ INSERT INTO produto_pedido (pedido_numfk, produto_codfk, quantidade_itens, preco
  (1008,	109,	1,	950.00);
 
 SELECT nome_cliente FROM cliente;
-INNER JOIN pedido, ON cod_cliente = num_pedido;
