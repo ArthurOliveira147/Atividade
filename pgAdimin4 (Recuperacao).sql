@@ -116,3 +116,5 @@ INSERT INTO produto_pedido (pedido_numfk, produto_codfk, quantidade_itens, preco
  (1008,	109,	1,	950.00);
 
 SELECT nome_cliente FROM cliente;
+
+Eu acabei nao conseguindo fazer o INNER JOIN
