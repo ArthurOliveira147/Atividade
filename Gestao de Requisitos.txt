@@ -1,0 +1,33 @@
+ O objetivo do gerenciamento de requisitos é garantir que as metas de desenvolvimento de software e produtos sejam 
+atingidas com sucesso. O gerenciamento de requisitos oferece uma maneira de evitar erros por meio do rastreamento 
+das alterações nos requisitos.
+
+ Etapas do gerenciamento de requisitos
+
+1_Rastrear requisitos para itens de trabalho;
+
+2_Consultar as partes interessadas após a implementação sobre as mudanças necessárias nos requisitos;
+
+3_Usar o gerenciamento de testes para verificar e validar os requisitos do sistema;
+
+4_Avaliar o impacto das mudanças.
+
+ Por que é necessário gerenciar requisitos?
+
+ Ter um plano de gerenciamento de requisitos é essencial para o sucesso de um projeto
+porque permite que as equipes de engenharia controlem o escopo e direcionem o ciclo
+de vida de desenvolvimento do produto.
+
+ O propósito do Gerenciamento de Requisitos é gerenciar os requisitos do produto e dos componentes do produto do
+projeto e identificar inconsistências entre os requisitos, os planos do projeto e os produtos de trabalho do
+projeto.
+
+Alguns dos benefícios do gerenciamento de requisitos incluem:
+Menor custo de desenvolvimento em todo o ciclo de vida;
+Menos defeitos;
+Risco minimizado para produtos críticos para a segurança;
+Entrega mais rápida;
+Reusabilidade;
+Rastreabilidade;
+Requisitos ligados a casos de teste;
+Gerenciamento de configuração global.
