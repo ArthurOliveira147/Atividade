@@ -31,3 +31,7 @@ Reusabilidade;
 Rastreabilidade;
 Requisitos ligados a casos de teste;
 Gerenciamento de configuração global.
+
+As chaves para o gerenciamento eficiente de requisitos incluem manter uma instrução clara dos Requisitos, juntamente
+com os atributos aplicáveis para cada tipo de requisito e a Rastreabilidade para outros requisitos e outros produtos
+de trabalho do projeto. A coleta de requisitos pode parecer uma tarefa bem precisa.
