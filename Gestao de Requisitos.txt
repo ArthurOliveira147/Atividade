@@ -35,3 +35,8 @@ Gerenciamento de configuração global.
 As chaves para o gerenciamento eficiente de requisitos incluem manter uma instrução clara dos Requisitos, juntamente
 com os atributos aplicáveis para cada tipo de requisito e a Rastreabilidade para outros requisitos e outros produtos
 de trabalho do projeto. A coleta de requisitos pode parecer uma tarefa bem precisa.
+
+ Quanto ganha um Analista de Requisitos?
+
+ Hoje quem trabalha como Analista de Requisitos ganha em média um salário de R$ 5.313,00. E antes de se tornar
+Analista de Requisitos, 36% foi Analista de Sistemas e depois 4% se tornou Gerente de Projetos.
