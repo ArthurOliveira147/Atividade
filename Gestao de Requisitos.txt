@@ -22,7 +22,7 @@ de vida de desenvolvimento do produto.
 projeto e identificar inconsistências entre os requisitos, os planos do projeto e os produtos de trabalho do
 projeto.
 
-Alguns dos benefícios do gerenciamento de requisitos incluem:
+ Alguns dos benefícios do gerenciamento de requisitos incluem:
 Menor custo de desenvolvimento em todo o ciclo de vida;
 Menos defeitos;
 Risco minimizado para produtos críticos para a segurança;
