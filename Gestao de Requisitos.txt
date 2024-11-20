@@ -5,6 +5,9 @@ requisitos, de modo que as equipes de engenharia sempre tenham requisitos atuais
 atingidas com sucesso. O gerenciamento de requisitos oferece uma maneira de evitar erros por meio do rastreamento 
 das alterações nos requisitos.
 
+ Os principais itens a serem definidos em um plano de gerenciamento de requisitos são a visão geral do projeto, o
+processo de coleta de requisitos, funções e responsabilidades, ferramentas e rastreabilidade.
+
  Etapas do gerenciamento de requisitos
 
 1_Rastrear requisitos para itens de trabalho;
