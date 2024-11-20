@@ -1,3 +1,6 @@
+ O gerenciamento de requisitos é um conjunto de técnicas para documentar, analisar, priorizar e concordar com os
+requisitos, de modo que as equipes de engenharia sempre tenham requisitos atuais e aprovados.
+
  O objetivo do gerenciamento de requisitos é garantir que as metas de desenvolvimento de software e produtos sejam 
 atingidas com sucesso. O gerenciamento de requisitos oferece uma maneira de evitar erros por meio do rastreamento 
 das alterações nos requisitos.
@@ -32,7 +35,7 @@ Rastreabilidade;
 Requisitos ligados a casos de teste;
 Gerenciamento de configuração global.
 
-As chaves para o gerenciamento eficiente de requisitos incluem manter uma instrução clara dos Requisitos, juntamente
+ As chaves para o gerenciamento eficiente de requisitos incluem manter uma instrução clara dos Requisitos, juntamente
 com os atributos aplicáveis para cada tipo de requisito e a Rastreabilidade para outros requisitos e outros produtos
 de trabalho do projeto. A coleta de requisitos pode parecer uma tarefa bem precisa.
 
